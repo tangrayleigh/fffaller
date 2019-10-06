@@ -1,0 +1,91 @@
+body {
+	background: no-repeat url("../images/earth-reflection.jpg");
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.header, h1, h2, h3, h4, p, div {
+	color: rgba(255, 255, 255, 1);
+	padding: 1rem;
+	margin: 0.5rem;
+	text-align: center;
+}
+
+#instructions {
+	visibility: hidden;
+}
+#quit {
+	display: none;
+}
+
+.wordBox {
+	border: 2px solid rgba(255, 255, 255, 1);
+	border-radius: 3rem;
+	padding: 2rem;
+}
+
+#letterPosition,
+#wrongLetter {
+	display: flex;
+	justify-content: center;
+	height: 5rem;
+}
+
+#letterPosition > div,
+#wrongLetter > div,
+#guessesLeft > div {
+	height: 2.25rem;
+	width: 2.25rem;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#letterPosition > div[id] {
+	color: deepskyblue;
+	font-weight: bolder;
+	border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+#wrongLetter > div {
+	color: red;
+}
+
+.scoreBox {
+	border: 2px solid rgba(255, 255, 255, 1);
+	border-radius: 3rem;
+}
+
+.footer {
+	height: fit-content;
+}
+
+.footer > p {
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+
+
+/* Grid Layout */
+.wordBox {
+	grid-area: word;
+}
+.scoreBox {
+	grid-area: score;
+}
+.gridBox {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 25vw;
+	grid-template-areas:
+		"word score";
+	max-height: 100vh;
+	max-width: 100vw;
+	margin: 1rem;
+}
+
+
+

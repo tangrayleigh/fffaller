@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Word Guess</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Interstellar Word Guess</h1>
+		<p id="instructions">PRESS A LETTER KEY TO GUESS!</p>
+	</header>
+
+	<main class="gridBox">
+		<!-- <button id="play">PLAY</button> -->
+		<!-- <button id="quit">QUIT</button> -->
+		<section class="wordBox">
+			<h2>Current Word</h2>
+			<div id="letterPosition"></div>
+			<h3>Guesses Remaining</h3>
+			<div id="guessesLeft"></div>
+			<h3>Letters Guessed Wrong</h3>
+			<div id="wrongLetter"></div>
+		</section>
+
+		<section class="scoreBox">
+			<h2>Score Board</h2>
+			<h3 id="wins"></h3>
+			<h3 id="losses"></h3>
+		</section>
+	</main>
+
+
+	<footer class="footer">
+		<p>
+			<small>Copyright &copy; 2019 Rayleigh Tang. All rights reserved.</small>
+		</p>
+	</footer>
+
+
+	<script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
